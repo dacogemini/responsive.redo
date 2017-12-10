@@ -1,0 +1,56 @@
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .menu {
+        width: auto;
+        height: 30%;
+    }
+    .grid-container {
+        display: flex;
+        
+    }
+}
+
+.header {
+    grid-area: header;
+}
+
+.menu {
+    grid-area: menu;
+}
+
+.main {
+    grid-area: main;
+}
+
+.right {
+    grid-area: right;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 'header header header header header header' 'menu main main main right right' 'menu footer footer footer footer footer';
+    grid-gap: 10px;
+    background-color: rgb(244, 246, 247);
+    margin-top: 40px;
+    padding: 10px;
+    width: 80%;
+    height: 100%;
+}
+
+.grid-container>div {
+    background-color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+p {
+    font-size: 18px;
+    text-align: left;
+    padding: 20px;
+    line-height: 30px;
+}
